@@ -28,47 +28,47 @@ Available variables are listed below, along with default values:
         - role: tkimball83.textual
           textual_defaults:
             CopyTextSelectionOnMouseUp:
-              type: int
-              value: 1
+              type: bool
+              value: true
             InvertSidebarColors:
-              type: int
-              value: 1
+              type: bool
+              value: true
             MemberListSortFavorsServerStaff:
-              type: int
-              value: 1
+              type: bool
+              value: true
             NicknameColorHashingComputesRGBValue:
-              type: int
-              value: 1
+              type: bool
+              value: true
             RejoinChannelOnLocalKick:
-              type: int
-              value: 1
+              type: bool
+              value: true
             ReplyUnignoredExternalCTCPRequests:
               type: int
               value: 0
             SUAutomaticallyUpdate:
-              type: int
-              value: 1
+              type: bool
+              value: true
             SUEnableAutomaticChecks:
-              type: int
-              value: 1
+              type: bool
+              value: true
             ServerListDoubleClickConnectServer:
-              type: int
-              value: 1
+              type: bool
+              value: true
             ServerListDoubleClickDisconnectServer:
-              type: int
-              value: 1
+              type: bool
+              value: true
             ServerListDoubleClickJoinChannel:
-              type: int
-              value: 1
+              type: bool
+              value: true
             ServerListDoubleClickLeaveChannel:
-              type: int
-              value: 1
+              type: bool
+              value: true
             TextFieldAutomaticGrammarCheck:
-              type: int
-              value: 0
+              type: bool
+              value: false
             TextFieldAutomaticSpellCheck:
-              type: int
-              value: 0
+              type: bool
+              value: false
 
 ## License
 
