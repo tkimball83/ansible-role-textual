@@ -1,0 +1,5 @@
+---
+textual_pkg: Textual
+textual_domain: "com.codeux.apps.{{ textual_pkg|lower }}"
+textual_defaults: {}
+...

@@ -1,0 +1,20 @@
+---
+- name: Ensure that the textual package is installed
+  tags: textual
+  homebrew_cask:
+    name: "{{ textual_pkg|lower }}"
+    state: present
+  register: textual_homebrew_cask
+  when: textual_pkg is defined
+
+- name: Applying textual configurations
+  tags: textual
+  osx_defaults:
+    domain: "{{ textual_domain }}"
+    key: "{{ item.key|regex_replace('_', ' ') }}"
+    state: "{{ item.value.state|default('present') }}"
+    type: "{{ item.value.type }}"
+    value: "{{ item.value.value }}"
+  with_dict: "{{ textual_defaults }}"
+  when: textual_homebrew_cask|success
+...
