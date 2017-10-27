@@ -1,6 +1,7 @@
 ---
 - name: Ensure that the textual package is installed
   tags: textual
+  become: true
   homebrew_cask:
     name: "{{ textual_pkg|lower }}"
     state: present
