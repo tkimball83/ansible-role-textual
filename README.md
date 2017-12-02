@@ -18,7 +18,7 @@ Available variables are listed below, along with default values:
 
 ## Dependencies
 
-  * https://galaxy.ansible.com/geerlingguy/homebrew
+None
 
 ## Example Playbook
 
