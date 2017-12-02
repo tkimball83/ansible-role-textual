@@ -6,7 +6,7 @@ macOS - Textual IRC Client
 
 ## Requirements
 
-This role requires Homebrew and Homebrew Cask to be installed
+This role requires homebrew and homebrew cask to be installed
 
 ## Role Variables
 
