@@ -1,5 +1,5 @@
 ---
-- name: Ensure that the textual package is installed
+- name: Ensure that the {{ textual_package }} package is installed
   tags: textual
   homebrew_cask:
     name: "{{ textual_package|lower }}"
