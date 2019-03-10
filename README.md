@@ -14,7 +14,7 @@ This role requires homebrew and homebrew cask to be installed
 
 Available variables are listed below, along with default values:
 
-    textual_defaults: {}
+    textual_defaults: []
     textual_domain: "com.codeux.apps.{{ textual_package|lower }}"
     textual_package: Textual
 
@@ -29,46 +29,46 @@ None
       roles:
         - role: tkimball83.textual
           textual_defaults:
-            CopyTextSelectionOnMouseUp:
+            - name: CopyTextSelectionOnMouseUp
               type: bool
               value: true
-            InvertSidebarColors:
+            - name: InvertSidebarColors
               type: bool
               value: true
-            MemberListSortFavorsServerStaff:
+            - name: MemberListSortFavorsServerStaff
               type: bool
               value: true
-            NicknameColorHashingComputesRGBValue:
+            - name: NicknameColorHashingComputesRGBValue
               type: bool
               value: true
-            RejoinChannelOnLocalKick:
+            - name: RejoinChannelOnLocalKick
               type: bool
               value: true
-            ReplyUnignoredExternalCTCPRequests:
+            - name: ReplyUnignoredExternalCTCPRequests
               type: int
               value: 0
-            SUAutomaticallyUpdate:
+            - name: SUAutomaticallyUpdate
               type: bool
               value: true
-            SUEnableAutomaticChecks:
+            - name: SUEnableAutomaticChecks
               type: bool
               value: true
-            ServerListDoubleClickConnectServer:
+            - name: ServerListDoubleClickConnectServer
               type: bool
               value: true
-            ServerListDoubleClickDisconnectServer:
+            - name: ServerListDoubleClickDisconnectServer
               type: bool
               value: true
-            ServerListDoubleClickJoinChannel:
+            - name: ServerListDoubleClickJoinChannel
               type: bool
               value: true
-            ServerListDoubleClickLeaveChannel:
+            - name: ServerListDoubleClickLeaveChannel
               type: bool
               value: true
-            TextFieldAutomaticGrammarCheck:
+            - name: TextFieldAutomaticGrammarCheck
               type: bool
               value: false
-            TextFieldAutomaticSpellCheck:
+            - name: TextFieldAutomaticSpellCheck
               type: bool
               value: false
 
